@@ -52,11 +52,11 @@ function details(id){
             let meal = data.meals[0];
             //console.log(meal);
         html = `
-        <div class = "meal-item" style="width:500px; height:700px; margin:0px 0px;">
+        <div class = "meal-item" style="width:400px; height:680px; margin:0px 0px;">
             <div class = "meal-img">
                 <img width="250" height="300" src = "${meal.strMealThumb}" alt = "food">
             </div>
-            <div class = "meal-name">
+            <div class = "meal-name float-start">
                 <h2>${meal.strMeal}</h2>
                 <br>
                 <h5>Ingredients</h5>
