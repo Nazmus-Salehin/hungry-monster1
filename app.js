@@ -58,6 +58,7 @@ function details(id){
             </div>
             <div class = "meal-name">
                 <h2>${meal.strMeal}</h2>
+                <br>
                 <h5>Ingredients</h5>
                 <p><strong>1 : </strong>${meal.strMeasure1} ${meal.strIngredient1}</p>
                 <p><strong>2 : </strong> ${meal.strMeasure2} ${meal.strIngredient2}</p>
