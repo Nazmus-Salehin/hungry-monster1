@@ -52,17 +52,19 @@ function details(id){
             let meal = data.meals[0];
             //console.log(meal);
         html = `
-        <div class = "meal-item" style="width:200px;">
+        <div class = "meal-item" style="width:500px; height:700px; margin:0px 0px;">
             <div class = "meal-img">
-                <img width="100" height="100" src = "${meal.strMealThumb}" alt = "food">
+                <img width="250" height="300" src = "${meal.strMealThumb}" alt = "food">
             </div>
             <div class = "meal-name">
-                <h3><strong>strMeal:</strong> ${meal.strMeal}</h3>
-                <h3><strong>strCategory:</strong> ${meal.strCategory}</h3>
-                <h3><strong>strInstructions:</strong>${meal.strInstructions}</h3>
-                <h3><strong>strTags:</strong>${meal.strTags}</h3>
-                <h3><strong>strIngredient1:</strong>${meal.strIngredient1}</h3>
-                <h3><strong>strIngredient12:</strong>${meal.strIngredient12}</h3>
+                <h2>${meal.strMeal}</h2>
+                <h5>Ingredients</h5>
+                <p><strong>1 : </strong>${meal.strMeasure1} ${meal.strIngredient1}</p>
+                <p><strong>2 : </strong> ${meal.strMeasure2} ${meal.strIngredient2}</p>
+                <p><strong>3 : </strong>${meal.strMeasure3} ${meal.strIngredient3}</p>
+                <p><strong>4 : </strong>${meal.strMeasure4} ${meal.strIngredient4}</p>
+                <p><strong>5 : </strong>${meal.strMeasure6} ${meal.strIngredient6}</p>
+                <p><strong>6 : </strong>${meal.strMeasure7} ${meal.strIngredient7}</p>
             </div>
         </div>
     `;
